@@ -16,7 +16,7 @@ console.log("sum of tripled evens")
 console.log(sumOfTripledEvens(array));
 console.log();
 
-//add one to each element in array
+//.map ex- add one to each element in array
 function addOne(num){
     return num+1;
 }
@@ -25,4 +25,15 @@ const mappedArr = array.map(addOne);
 console.log("addOne")
 console.log(array);
 console.log(mappedArr);
+console.log();
+
+//.filter ex - return odd elements
+function isOdd(num){
+    return num%2 !==0;
+}
+
+const oddNums = array.filter(isOdd);
+console.log("OddNums");
+console.log(array);
+console.log(oddNums);
 console.log();
