@@ -1,6 +1,6 @@
 //Returns sum of even numbers multiplied by 3
 function sumOfTripledEvens(array){
-    let sum =0;
+    let sum = 0;
     for(let i = 0; i < array.length; i++){
         
         if(array[i] % 2 === 0){
@@ -29,7 +29,7 @@ console.log(mappedArr);
 
 //.filter - return odd elements
 function isOdd(num){
-    return num%2 !==0;
+    return num % 2 !== 0;
 }
 
 const oddNums = array.filter(isOdd);
@@ -41,6 +41,8 @@ console.log(oddNums);
 const productOfAllNums = array.reduce((total, currentItem) => {
     return total * currentItem;
 }, 1);
+
 console.log("productOfAllNums");
 console.log(array);
 console.log(productOfAllNums);
+
