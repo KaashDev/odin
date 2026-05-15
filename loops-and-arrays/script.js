@@ -11,5 +11,18 @@ function sumOfTripledEvens(array){
     return sum;
 }
 
-let array = [1,2,3,4,5]
+const array = [1,2,3,4,5]
+console.log("sum of tripled evens")
 console.log(sumOfTripledEvens(array));
+console.log();
+
+//add one to each element in array
+function addOne(num){
+    return num+1;
+}
+
+const mappedArr = array.map(addOne);
+console.log("addOne")
+console.log(array);
+console.log(mappedArr);
+console.log();
