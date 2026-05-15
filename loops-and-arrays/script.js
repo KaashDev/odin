@@ -46,3 +46,16 @@ console.log("productOfAllNums");
 console.log(array);
 console.log(productOfAllNums);
 
+function sumOfTripledEvensv2(array){
+    return array.filter((num) =>{
+        return num % 2 === 0;
+    }).map((num) => {
+        return num * 3;
+    }).reduce((total, currentItem) => {
+        return total + currentItem;
+    }, 0);
+}
+
+console.log("sumOfTripledEvensv2");
+console.log(array);
+console.log(sumOfTripledEvensv2(array));
