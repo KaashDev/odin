@@ -4,9 +4,6 @@ function capitalize(str){
 
 function camelize(str){
     let arr = str.split("-");
-    arr = arr.filter((word) =>{
-        return word !== "";
-    });
     console.log(arr);
 
     const arrWithoutFirst = arr.slice(1);
